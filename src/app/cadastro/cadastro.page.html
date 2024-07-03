@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar  color="success">
+    <ion-title>Cadastrar Usuário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label>Nome: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.Nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>CPF </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.CPF"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>E-Mail: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.Email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Celular: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.Celular"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Endereço: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.Endereco"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Bairro: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.Bairro"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Numero: </ion-label>
+    <ion-input type="text" [(ngModel)]="formulario.Numero"></ion-input>
+  </ion-item>
+
+ 
+
+  
+  <ion-button expand="block" color="primary" (click)="cadastro()" color="success">Cadastrar</ion-button>
+  <ion-button expand="block" color="primary"  color="success" href="/login">Voltar para login</ion-button>
+
+
+ 
+
+
+</ion-content>

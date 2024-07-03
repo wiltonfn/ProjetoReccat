@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>RecCAT</ion-title>
+  </ion-toolbar>
+  <style>
+    .modalt {
+        width: 100% !important; /* aqui vc coloca a largura que deseja */
+        margin: 20px auto;
+    }
+</style>
+</ion-header>
+
+<ion-content>
+
+    
+    <center><img src="https://i.ibb.co/r0cCwV8/Novo-Projeto-4.png"></center>
+
+    <br>
+  
+  <center><ion-input type="text" [(ngModel)]="formulario.CPF"  placeholder="DIGITE SEU CPF" center></ion-input></center>
+ <ion-content class="ion-padding">
+  <ion-button expand="block" color="success" (click)="verifica()">Acessar Sistema</ion-button>
+ <ion-button id="open-modal4" color="success" class="modal" href="/cadastro" expand="full" >Cadastro</ion-button>
+ 
+ 
+  <br>
+
+
+    <center><img src="https://i.imgur.com/CC7zoVZ.png"></center>
+         
+      
+</ion-content>
+</ion-content>
+

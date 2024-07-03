@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title>
+      Solicitar Coleta
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 3</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-card color="success">
+      <img src="https://pensamentoverde.com.br/wp-content/uploads/2018/01/1-reciclagem-e-meio-ambiente.jpg">
+    <ion-card-content color="success">
+      <center><b>Painel de Solicitação!</b></center> 
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Material" [(ngModel)]="formulario.tipomaterial">
+        <ion-select-option value="Papel">Papel</ion-select-option>
+        <ion-select-option value='Plástico'>Plástico</ion-select-option>
+        <ion-select-option value="Vidro">Vidro</ion-select-option>
+        <ion-select-option value="Metal">Metal</ion-select-option>
+        <ion-select-option value='Orgânico'>Orgânico</ion-select-option>
+        <ion-select-option value="Eletro">Eletrônicos (Pilha e etc..)</ion-select-option>
+        <ion-select-option value="Todos">Todos(MIX)</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Quantidade" [(ngModel)]="formulario.quantidade">
+        <ion-select-option value="0-5  Sacolas">0-5  Sacolas</ion-select-option>
+        <ion-select-option value="5-10 Sacolas">5-10 Sacolas</ion-select-option>
+        <ion-select-option value="10-20 Sacolas">10-20 Sacolas</ion-select-option>
+        <ion-select-option value="20-30 Sacolas">20-30 Sacolas</ion-select-option>
+        <ion-select-option value="+30 Sacolas">+30 Sacolas</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Descrição" [(ngModel)]="formulario.descricao">
+        <ion-select-option value="Leve">Material Leve</ion-select-option>
+        <ion-select-option value="Pesado">Material Pesado</ion-select-option>
+        <ion-select-option value="Muito pesado">Material Muito Pesado</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Retirada" [(ngModel)]="formulario.retirada">
+        <ion-select-option value='Manhã'>Manhã</ion-select-option>
+        <ion-select-option value="Tarde">Tarde</ion-select-option>
+        <ion-select-option value="Noite">Noite</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <br>
+
+  <center>
+  <ion-button color="success" (click)="escreveDados()">
+    Confirmar Solicitação!
+    <ion-icon slot="start" name="bag-add"></ion-icon>
+  </ion-button>
+</center>
+</ion-content>
+

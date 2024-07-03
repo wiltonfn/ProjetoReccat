@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let product of lista">
+    <ion-label>&nbsp;{{product.tipomaterial}}</ion-label>
+    <p item-right>{{product.quantidade}}</p>
+  </ion-item>
+  </ion-list>
+
+  
+ 
+  <ion-card *ngFor="let test of lista">
+ 
+    <ion-card-header color="medium">
+      
+   
+       
+      <center>
+          <ion-label>Data da Solicitação: <b>20/09/2022</b></ion-label></center>
+       
+     
+    </ion-card-header>
+    <ion-card-content>
+    
+     
+      <ion-list>
+        <ion-item>
+          <ion-icon name="diamond-outline" slot="start"></ion-icon>
+          <ion-label>{{test.tipomaterial}}</ion-label>
+          <ion-icon name="trash"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="duplicate-outline" slot="start"></ion-icon>
+          <ion-label>{{test.quantidade}}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="document-text-outline" slot="start"></ion-icon> 
+          <ion-label>{{test.descricao}}</ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-icon name="stats-chart" slot="start"></ion-icon>
+          <ion-label color="success"><b>{{test.status}}</b></ion-label>
+          <ion-icon name="settings" color="success"></ion-icon>
+          <ion-icon name="car-outline"></ion-icon>
+          <ion-icon name="storefront-outline"></ion-icon>
+  
+        </ion-item>
+      </ion-list>
+     </ion-card-content>
+    </ion-card>
+
+</ion-content>
+

@@ -1,0 +1,44 @@
+.cancelado{
+    background-color: red;
+    color: white; 
+    
+}
+.em-progresso{
+    --background: yellow;
+    color: black;
+
+}
+.coletado{
+    --background: green;
+    color: white;
+}
+.solicitado{
+    --background: rgb(10, 62, 235); 
+    color: black;
+}
+.cancelado ion-icon{
+    color: red;
+}
+.em-progresso ion-icon{
+    color: yellow;
+}
+.coletado ion-icon{
+    color: green;
+}
+.solicitado ion-icon{
+    color: rgb(10, 62, 235);
+}
+.canceladolabel{
+    color: red;
+    
+}
+.em-progressolabel{
+    color: yellow;
+
+}
+.coletadolabel{
+    color: green;
+}
+.solicitadolabel{
+    color: purple; 
+}
